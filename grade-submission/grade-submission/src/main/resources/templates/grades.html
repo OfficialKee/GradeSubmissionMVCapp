@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
   <head> 
     <title>Grades</title>
@@ -114,6 +114,12 @@
           <th>Student</th>
           <th>Subject</th>
           <th>Score</th>
+        </tr>
+        <tr th:object="${grade}">
+          <td th:text="*{name}"></td>
+          <td th:text="*{subject}"></td>
+          <td th:text ="*{score}"></td>
+         
         </tr>
       </table>
     </div>
