@@ -3,6 +3,11 @@
     <head>
         <title>Painting</title>
     </head>
-    <body>               
+    <body>  
+        <div th:switch="${painting}">
+            <img th:case="'starry-night'"  src="https://files.portive.com/f/learnthepart/gekfp1ustqgqqhrjsnbqb--652x452.png" alt="">
+            <img th:case="'mona-lisa'"  src="https://files.portive.com/f/learnthepart/yemdiej7o6yi3hpzn7kmy--332x542.png" alt="">
+
+        </div>             
     </body>
 </html>

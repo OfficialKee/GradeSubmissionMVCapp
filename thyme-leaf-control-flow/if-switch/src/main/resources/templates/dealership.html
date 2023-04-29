@@ -5,5 +5,30 @@
     </head>
     <body>
         <h3>Dealership</h3>
+        <div th:if="${budget}>4999">
+            <div th:switch="${make}">
+                <div th:case="'Toyota'">
+                    Toyota Corlla: $5000
+
+                </div>
+                <div th:case="'Volkswagen'">
+                    Volkswagen Jetta: $6000
+
+                </div>
+                <div th:case="'Frod'">
+                    Ford Escape: $7000
+
+                </div>
+                <div th:case="'Toyota'">
+                    Honda Civic: $8000
+
+                </div>
+                <div th:case="'default'">
+                    No cars match your query
+
+                </div>
+               
+            </div>
+        </div>
     </body>
 </html>
