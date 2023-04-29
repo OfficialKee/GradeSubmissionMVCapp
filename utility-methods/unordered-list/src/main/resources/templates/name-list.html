@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Name</title>
+    </head>
+    <body>
+        <p th:text="${Name}" style="font-weight: bold; font-size: 50px;"></p>
+        <ul>
+            
+                <li th:text="${#strings.substring(Name,0,1)}"></li>
+                <li th:text="${#strings.substring(Name,0,2)}"></li>
+                <li th:text="${#strings.substring(Name,0,3)}"></li>
+                <li th:text="${#strings.substring(Name,0,4)}"></li>
+                <li th:text="${#strings.substring(Name,0,5)}"></li>
+                <li th:text="${#strings.substring(Name,0,6)}"></li>
+            
+        </ul>
+    </body>
+</html>
