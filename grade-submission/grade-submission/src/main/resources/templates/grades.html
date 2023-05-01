@@ -94,6 +94,10 @@
         background-color: #ddd;
         color: black;
       }
+      .update{
+        color:white;
+        background-color: #04AA6D;
+      }
       
       body {
         background: #263238;
@@ -119,6 +123,7 @@
           <td th:text="*{grade.name}"></td>
           <td th:text="*{grade.subject}"></td>
           <td th:text ="*{grade.score}"></td>
+          <td><a class="update" role="button" th:href="@{/(name = ${grade.name})}">Update</a></td>
          
         </tr>
       </table>
